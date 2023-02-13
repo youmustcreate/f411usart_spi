@@ -280,15 +280,15 @@ void USART2_IRQHandler(void)
 
     uint32_t tmp_flag = 0;
     uint32_t temp;
-    tmp_flag =__HAL_UART_GET_FLAG(&huart2,UART_FLAG_IDLE); //获取IDLE标志�?
-    if((tmp_flag != RESET))//idle标志被置�?
+    tmp_flag =__HAL_UART_GET_FLAG(&huart2,UART_FLAG_IDLE); //获取IDLE标志�??
+    if((tmp_flag != RESET))//idle标志被置�??
     {
-        __HAL_UART_CLEAR_IDLEFLAG(&huart2);//清除标志�?
+        __HAL_UART_CLEAR_IDLEFLAG(&huart2);//清除标志�??
         temp = huart2.Instance->SR;  //清除状�?�寄存器SR,读取SR寄存器可以实现清除SR寄存器的功能
-        temp = huart2.Instance->DR; //读取数据寄存器中的数�?
+        temp = huart2.Instance->DR; //读取数据寄存器中的数�??
         HAL_UART_DMAStop(&huart2); //
         temp  = hdma_usart2_rx.Instance->NDTR;// 获取DMA中未传输的数据个数，NDTR寄存器分析见下面
-        rx_len =  BUFFER_SIZE - temp; //总计数减去未传输的数据个数，得到已经接收的数据个�?
+        rx_len =  BUFFER_SIZE - temp; //总计数减去未传输的数据个数，得到已经接收的数据个�??
         recv_end_flag = 1;    // 接受完成标志位置1
     }
   /* USER CODE END USART2_IRQn 0 */

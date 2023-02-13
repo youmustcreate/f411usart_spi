@@ -1010,7 +1010,7 @@ Discarded input sections
  .data          0x00000000        0x0 CMakeFiles/clioncube.elf.dir/Src/spi.c.obj
  .bss           0x00000000        0x0 CMakeFiles/clioncube.elf.dir/Src/spi.c.obj
  .text.HAL_SPI_MspDeInit
-                0x00000000       0x34 CMakeFiles/clioncube.elf.dir/Src/spi.c.obj
+                0x00000000       0x54 CMakeFiles/clioncube.elf.dir/Src/spi.c.obj
  .text          0x00000000        0x0 CMakeFiles/clioncube.elf.dir/Src/stm32f4xx_hal_msp.c.obj
  .data          0x00000000        0x0 CMakeFiles/clioncube.elf.dir/Src/stm32f4xx_hal_msp.c.obj
  .bss           0x00000000        0x0 CMakeFiles/clioncube.elf.dir/Src/stm32f4xx_hal_msp.c.obj
@@ -1414,7 +1414,7 @@ LOAD d:/applications/mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/1
                 0x08000000                g_pfnVectors
                 0x08000198                . = ALIGN (0x4)
 
-.text           0x08000198     0x3118
+.text           0x08000198     0x3208
                 0x08000198                . = ALIGN (0x4)
  *(.text)
  .text          0x08000198       0x30 d:/applications/mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m/nofp\libgcc.a(_aeabi_uldivmod.o)
@@ -1636,278 +1636,281 @@ LOAD d:/applications/mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/1
                 0x08002414       0x9c CMakeFiles/clioncube.elf.dir/Src/dma.c.obj
                 0x08002414                MX_DMA_Init
  .text.MX_GPIO_Init
-                0x080024b0       0xfc CMakeFiles/clioncube.elf.dir/Src/gpio.c.obj
+                0x080024b0      0x110 CMakeFiles/clioncube.elf.dir/Src/gpio.c.obj
                 0x080024b0                MX_GPIO_Init
  .text.MX_NVIC_Init
-                0x080025ac       0x14 CMakeFiles/clioncube.elf.dir/Src/main.c.obj
+                0x080025c0       0x14 CMakeFiles/clioncube.elf.dir/Src/main.c.obj
  .text.SPI_NSS_Pin_Control
-                0x080025c0       0x20 CMakeFiles/clioncube.elf.dir/Src/main.c.obj
-                0x080025c0                SPI_NSS_Pin_Control
+                0x080025d4       0x20 CMakeFiles/clioncube.elf.dir/Src/main.c.obj
+                0x080025d4                SPI_NSS_Pin_Control
  .text.SystemClock_Config
-                0x080025e0       0x94 CMakeFiles/clioncube.elf.dir/Src/main.c.obj
-                0x080025e0                SystemClock_Config
+                0x080025f4       0x94 CMakeFiles/clioncube.elf.dir/Src/main.c.obj
+                0x080025f4                SystemClock_Config
  .text.HAL_TIM_PeriodElapsedCallback
-                0x08002674       0x5c CMakeFiles/clioncube.elf.dir/Src/main.c.obj
-                0x08002674                HAL_TIM_PeriodElapsedCallback
+                0x08002688       0x5c CMakeFiles/clioncube.elf.dir/Src/main.c.obj
+                0x08002688                HAL_TIM_PeriodElapsedCallback
  .text.SWITCH_CTRL
-                0x080026d0      0x1a4 CMakeFiles/clioncube.elf.dir/Src/main.c.obj
-                0x080026d0                SWITCH_CTRL
- .text.main     0x08002874       0xf4 CMakeFiles/clioncube.elf.dir/Src/main.c.obj
-                0x08002874                main
+                0x080026e4      0x1a4 CMakeFiles/clioncube.elf.dir/Src/main.c.obj
+                0x080026e4                SWITCH_CTRL
+ .text.main     0x08002888      0x138 CMakeFiles/clioncube.elf.dir/Src/main.c.obj
+                0x08002888                main
  .text.HAL_UART_RxCpltCallback
-                0x08002968        0x2 CMakeFiles/clioncube.elf.dir/Src/main.c.obj
-                0x08002968                HAL_UART_RxCpltCallback
+                0x080029c0        0x2 CMakeFiles/clioncube.elf.dir/Src/main.c.obj
+                0x080029c0                HAL_UART_RxCpltCallback
  .text.HAL_UART_TxCpltCallback
-                0x0800296a        0x2 CMakeFiles/clioncube.elf.dir/Src/main.c.obj
-                0x0800296a                HAL_UART_TxCpltCallback
+                0x080029c2        0x2 CMakeFiles/clioncube.elf.dir/Src/main.c.obj
+                0x080029c2                HAL_UART_TxCpltCallback
  .text.Error_Handler
-                0x0800296c        0x2 CMakeFiles/clioncube.elf.dir/Src/main.c.obj
-                0x0800296c                Error_Handler
- *fill*         0x0800296e        0x2 
+                0x080029c4        0x2 CMakeFiles/clioncube.elf.dir/Src/main.c.obj
+                0x080029c4                Error_Handler
+ *fill*         0x080029c6        0x2 
  .text.MX_SPI2_Init
-                0x08002970       0x44 CMakeFiles/clioncube.elf.dir/Src/spi.c.obj
-                0x08002970                MX_SPI2_Init
+                0x080029c8       0x44 CMakeFiles/clioncube.elf.dir/Src/spi.c.obj
+                0x080029c8                MX_SPI2_Init
+ .text.MX_SPI3_Init
+                0x08002a0c       0x48 CMakeFiles/clioncube.elf.dir/Src/spi.c.obj
+                0x08002a0c                MX_SPI3_Init
  .text.HAL_SPI_MspInit
-                0x080029b4       0x80 CMakeFiles/clioncube.elf.dir/Src/spi.c.obj
-                0x080029b4                HAL_SPI_MspInit
+                0x08002a54       0xd0 CMakeFiles/clioncube.elf.dir/Src/spi.c.obj
+                0x08002a54                HAL_SPI_MspInit
  .text.HAL_MspInit
-                0x08002a34       0x38 CMakeFiles/clioncube.elf.dir/Src/stm32f4xx_hal_msp.c.obj
-                0x08002a34                HAL_MspInit
+                0x08002b24       0x38 CMakeFiles/clioncube.elf.dir/Src/stm32f4xx_hal_msp.c.obj
+                0x08002b24                HAL_MspInit
  .text.NMI_Handler
-                0x08002a6c        0x2 CMakeFiles/clioncube.elf.dir/Src/stm32f4xx_it.c.obj
-                0x08002a6c                NMI_Handler
+                0x08002b5c        0x2 CMakeFiles/clioncube.elf.dir/Src/stm32f4xx_it.c.obj
+                0x08002b5c                NMI_Handler
  .text.HardFault_Handler
-                0x08002a6e        0x2 CMakeFiles/clioncube.elf.dir/Src/stm32f4xx_it.c.obj
-                0x08002a6e                HardFault_Handler
+                0x08002b5e        0x2 CMakeFiles/clioncube.elf.dir/Src/stm32f4xx_it.c.obj
+                0x08002b5e                HardFault_Handler
  .text.MemManage_Handler
-                0x08002a70        0x2 CMakeFiles/clioncube.elf.dir/Src/stm32f4xx_it.c.obj
-                0x08002a70                MemManage_Handler
+                0x08002b60        0x2 CMakeFiles/clioncube.elf.dir/Src/stm32f4xx_it.c.obj
+                0x08002b60                MemManage_Handler
  .text.BusFault_Handler
-                0x08002a72        0x2 CMakeFiles/clioncube.elf.dir/Src/stm32f4xx_it.c.obj
-                0x08002a72                BusFault_Handler
+                0x08002b62        0x2 CMakeFiles/clioncube.elf.dir/Src/stm32f4xx_it.c.obj
+                0x08002b62                BusFault_Handler
  .text.UsageFault_Handler
-                0x08002a74        0x2 CMakeFiles/clioncube.elf.dir/Src/stm32f4xx_it.c.obj
-                0x08002a74                UsageFault_Handler
+                0x08002b64        0x2 CMakeFiles/clioncube.elf.dir/Src/stm32f4xx_it.c.obj
+                0x08002b64                UsageFault_Handler
  .text.SVC_Handler
-                0x08002a76        0x2 CMakeFiles/clioncube.elf.dir/Src/stm32f4xx_it.c.obj
-                0x08002a76                SVC_Handler
+                0x08002b66        0x2 CMakeFiles/clioncube.elf.dir/Src/stm32f4xx_it.c.obj
+                0x08002b66                SVC_Handler
  .text.DebugMon_Handler
-                0x08002a78        0x2 CMakeFiles/clioncube.elf.dir/Src/stm32f4xx_it.c.obj
-                0x08002a78                DebugMon_Handler
+                0x08002b68        0x2 CMakeFiles/clioncube.elf.dir/Src/stm32f4xx_it.c.obj
+                0x08002b68                DebugMon_Handler
  .text.PendSV_Handler
-                0x08002a7a        0x2 CMakeFiles/clioncube.elf.dir/Src/stm32f4xx_it.c.obj
-                0x08002a7a                PendSV_Handler
+                0x08002b6a        0x2 CMakeFiles/clioncube.elf.dir/Src/stm32f4xx_it.c.obj
+                0x08002b6a                PendSV_Handler
  .text.SysTick_Handler
-                0x08002a7c        0x8 CMakeFiles/clioncube.elf.dir/Src/stm32f4xx_it.c.obj
-                0x08002a7c                SysTick_Handler
+                0x08002b6c        0x8 CMakeFiles/clioncube.elf.dir/Src/stm32f4xx_it.c.obj
+                0x08002b6c                SysTick_Handler
  .text.DMA1_Stream5_IRQHandler
-                0x08002a84       0x10 CMakeFiles/clioncube.elf.dir/Src/stm32f4xx_it.c.obj
-                0x08002a84                DMA1_Stream5_IRQHandler
+                0x08002b74       0x10 CMakeFiles/clioncube.elf.dir/Src/stm32f4xx_it.c.obj
+                0x08002b74                DMA1_Stream5_IRQHandler
  .text.DMA1_Stream6_IRQHandler
-                0x08002a94       0x10 CMakeFiles/clioncube.elf.dir/Src/stm32f4xx_it.c.obj
-                0x08002a94                DMA1_Stream6_IRQHandler
+                0x08002b84       0x10 CMakeFiles/clioncube.elf.dir/Src/stm32f4xx_it.c.obj
+                0x08002b84                DMA1_Stream6_IRQHandler
  .text.TIM2_IRQHandler
-                0x08002aa4       0x10 CMakeFiles/clioncube.elf.dir/Src/stm32f4xx_it.c.obj
-                0x08002aa4                TIM2_IRQHandler
+                0x08002b94       0x10 CMakeFiles/clioncube.elf.dir/Src/stm32f4xx_it.c.obj
+                0x08002b94                TIM2_IRQHandler
  .text.TIM3_IRQHandler
-                0x08002ab4       0x10 CMakeFiles/clioncube.elf.dir/Src/stm32f4xx_it.c.obj
-                0x08002ab4                TIM3_IRQHandler
+                0x08002ba4       0x10 CMakeFiles/clioncube.elf.dir/Src/stm32f4xx_it.c.obj
+                0x08002ba4                TIM3_IRQHandler
  .text.SPI2_IRQHandler
-                0x08002ac4       0x10 CMakeFiles/clioncube.elf.dir/Src/stm32f4xx_it.c.obj
-                0x08002ac4                SPI2_IRQHandler
+                0x08002bb4       0x10 CMakeFiles/clioncube.elf.dir/Src/stm32f4xx_it.c.obj
+                0x08002bb4                SPI2_IRQHandler
  .text.USART2_IRQHandler
-                0x08002ad4       0x64 CMakeFiles/clioncube.elf.dir/Src/stm32f4xx_it.c.obj
-                0x08002ad4                USART2_IRQHandler
+                0x08002bc4       0x64 CMakeFiles/clioncube.elf.dir/Src/stm32f4xx_it.c.obj
+                0x08002bc4                USART2_IRQHandler
  .text.SystemInit
-                0x08002b38        0x2 CMakeFiles/clioncube.elf.dir/Src/system_stm32f4xx.c.obj
-                0x08002b38                SystemInit
- *fill*         0x08002b3a        0x2 
+                0x08002c28        0x2 CMakeFiles/clioncube.elf.dir/Src/system_stm32f4xx.c.obj
+                0x08002c28                SystemInit
+ *fill*         0x08002c2a        0x2 
  .text.MX_TIM2_Init
-                0x08002b3c       0x70 CMakeFiles/clioncube.elf.dir/Src/tim.c.obj
-                0x08002b3c                MX_TIM2_Init
+                0x08002c2c       0x70 CMakeFiles/clioncube.elf.dir/Src/tim.c.obj
+                0x08002c2c                MX_TIM2_Init
  .text.MX_TIM3_Init
-                0x08002bac       0x70 CMakeFiles/clioncube.elf.dir/Src/tim.c.obj
-                0x08002bac                MX_TIM3_Init
+                0x08002c9c       0x70 CMakeFiles/clioncube.elf.dir/Src/tim.c.obj
+                0x08002c9c                MX_TIM3_Init
  .text.HAL_TIM_Base_MspInit
-                0x08002c1c       0x64 CMakeFiles/clioncube.elf.dir/Src/tim.c.obj
-                0x08002c1c                HAL_TIM_Base_MspInit
+                0x08002d0c       0x64 CMakeFiles/clioncube.elf.dir/Src/tim.c.obj
+                0x08002d0c                HAL_TIM_Base_MspInit
  .text.MX_USART2_UART_Init
-                0x08002c80       0x34 CMakeFiles/clioncube.elf.dir/Src/usart.c.obj
-                0x08002c80                MX_USART2_UART_Init
+                0x08002d70       0x34 CMakeFiles/clioncube.elf.dir/Src/usart.c.obj
+                0x08002d70                MX_USART2_UART_Init
  .text.HAL_UART_MspInit
-                0x08002cb4      0x108 CMakeFiles/clioncube.elf.dir/Src/usart.c.obj
-                0x08002cb4                HAL_UART_MspInit
+                0x08002da4      0x108 CMakeFiles/clioncube.elf.dir/Src/usart.c.obj
+                0x08002da4                HAL_UART_MspInit
  .text.Reset_Handler
-                0x08002dbc       0x50 CMakeFiles/clioncube.elf.dir/Startup/startup_stm32f411ceux.s.obj
-                0x08002dbc                Reset_Handler
+                0x08002eac       0x50 CMakeFiles/clioncube.elf.dir/Startup/startup_stm32f411ceux.s.obj
+                0x08002eac                Reset_Handler
  .text.Default_Handler
-                0x08002e0c        0x2 CMakeFiles/clioncube.elf.dir/Startup/startup_stm32f411ceux.s.obj
-                0x08002e0c                RTC_Alarm_IRQHandler
-                0x08002e0c                EXTI2_IRQHandler
-                0x08002e0c                SPI4_IRQHandler
-                0x08002e0c                TIM1_CC_IRQHandler
-                0x08002e0c                DMA2_Stream5_IRQHandler
-                0x08002e0c                PVD_IRQHandler
-                0x08002e0c                SDIO_IRQHandler
-                0x08002e0c                TAMP_STAMP_IRQHandler
-                0x08002e0c                EXTI3_IRQHandler
-                0x08002e0c                TIM1_UP_TIM10_IRQHandler
-                0x08002e0c                I2C3_ER_IRQHandler
-                0x08002e0c                EXTI0_IRQHandler
-                0x08002e0c                I2C2_EV_IRQHandler
-                0x08002e0c                DMA1_Stream2_IRQHandler
-                0x08002e0c                FPU_IRQHandler
-                0x08002e0c                DMA2_Stream2_IRQHandler
-                0x08002e0c                SPI1_IRQHandler
-                0x08002e0c                TIM1_BRK_TIM9_IRQHandler
-                0x08002e0c                DMA2_Stream3_IRQHandler
-                0x08002e0c                USART6_IRQHandler
-                0x08002e0c                DMA2_Stream0_IRQHandler
-                0x08002e0c                TIM4_IRQHandler
-                0x08002e0c                I2C1_EV_IRQHandler
-                0x08002e0c                DMA1_Stream1_IRQHandler
-                0x08002e0c                RCC_IRQHandler
-                0x08002e0c                Default_Handler
-                0x08002e0c                EXTI15_10_IRQHandler
-                0x08002e0c                ADC_IRQHandler
-                0x08002e0c                DMA1_Stream7_IRQHandler
-                0x08002e0c                SPI5_IRQHandler
-                0x08002e0c                TIM5_IRQHandler
-                0x08002e0c                DMA2_Stream7_IRQHandler
-                0x08002e0c                I2C3_EV_IRQHandler
-                0x08002e0c                EXTI9_5_IRQHandler
-                0x08002e0c                RTC_WKUP_IRQHandler
-                0x08002e0c                DMA1_Stream0_IRQHandler
-                0x08002e0c                EXTI4_IRQHandler
-                0x08002e0c                WWDG_IRQHandler
-                0x08002e0c                OTG_FS_WKUP_IRQHandler
-                0x08002e0c                TIM1_TRG_COM_TIM11_IRQHandler
-                0x08002e0c                EXTI1_IRQHandler
-                0x08002e0c                I2C2_ER_IRQHandler
-                0x08002e0c                DMA2_Stream1_IRQHandler
-                0x08002e0c                FLASH_IRQHandler
-                0x08002e0c                DMA2_Stream4_IRQHandler
-                0x08002e0c                USART1_IRQHandler
-                0x08002e0c                OTG_FS_IRQHandler
-                0x08002e0c                SPI3_IRQHandler
-                0x08002e0c                DMA1_Stream4_IRQHandler
-                0x08002e0c                I2C1_ER_IRQHandler
-                0x08002e0c                DMA2_Stream6_IRQHandler
-                0x08002e0c                DMA1_Stream3_IRQHandler
- *fill*         0x08002e0e        0x2 
+                0x08002efc        0x2 CMakeFiles/clioncube.elf.dir/Startup/startup_stm32f411ceux.s.obj
+                0x08002efc                RTC_Alarm_IRQHandler
+                0x08002efc                EXTI2_IRQHandler
+                0x08002efc                SPI4_IRQHandler
+                0x08002efc                TIM1_CC_IRQHandler
+                0x08002efc                DMA2_Stream5_IRQHandler
+                0x08002efc                PVD_IRQHandler
+                0x08002efc                SDIO_IRQHandler
+                0x08002efc                TAMP_STAMP_IRQHandler
+                0x08002efc                EXTI3_IRQHandler
+                0x08002efc                TIM1_UP_TIM10_IRQHandler
+                0x08002efc                I2C3_ER_IRQHandler
+                0x08002efc                EXTI0_IRQHandler
+                0x08002efc                I2C2_EV_IRQHandler
+                0x08002efc                DMA1_Stream2_IRQHandler
+                0x08002efc                FPU_IRQHandler
+                0x08002efc                DMA2_Stream2_IRQHandler
+                0x08002efc                SPI1_IRQHandler
+                0x08002efc                TIM1_BRK_TIM9_IRQHandler
+                0x08002efc                DMA2_Stream3_IRQHandler
+                0x08002efc                USART6_IRQHandler
+                0x08002efc                DMA2_Stream0_IRQHandler
+                0x08002efc                TIM4_IRQHandler
+                0x08002efc                I2C1_EV_IRQHandler
+                0x08002efc                DMA1_Stream1_IRQHandler
+                0x08002efc                RCC_IRQHandler
+                0x08002efc                Default_Handler
+                0x08002efc                EXTI15_10_IRQHandler
+                0x08002efc                ADC_IRQHandler
+                0x08002efc                DMA1_Stream7_IRQHandler
+                0x08002efc                SPI5_IRQHandler
+                0x08002efc                TIM5_IRQHandler
+                0x08002efc                DMA2_Stream7_IRQHandler
+                0x08002efc                I2C3_EV_IRQHandler
+                0x08002efc                EXTI9_5_IRQHandler
+                0x08002efc                RTC_WKUP_IRQHandler
+                0x08002efc                DMA1_Stream0_IRQHandler
+                0x08002efc                EXTI4_IRQHandler
+                0x08002efc                WWDG_IRQHandler
+                0x08002efc                OTG_FS_WKUP_IRQHandler
+                0x08002efc                TIM1_TRG_COM_TIM11_IRQHandler
+                0x08002efc                EXTI1_IRQHandler
+                0x08002efc                I2C2_ER_IRQHandler
+                0x08002efc                DMA2_Stream1_IRQHandler
+                0x08002efc                FLASH_IRQHandler
+                0x08002efc                DMA2_Stream4_IRQHandler
+                0x08002efc                USART1_IRQHandler
+                0x08002efc                OTG_FS_IRQHandler
+                0x08002efc                SPI3_IRQHandler
+                0x08002efc                DMA1_Stream4_IRQHandler
+                0x08002efc                I2C1_ER_IRQHandler
+                0x08002efc                DMA2_Stream6_IRQHandler
+                0x08002efc                DMA1_Stream3_IRQHandler
+ *fill*         0x08002efe        0x2 
  .text.__udivmoddi4
-                0x08002e10      0x2bc d:/applications/mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m/nofp\libgcc.a(_udivmoddi4.o)
-                0x08002e10                __udivmoddi4
- .text.memset   0x080030cc       0xa4 d:/applications/mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m/nofp\libg.a(libc_a-memset.o)
-                0x080030cc                memset
+                0x08002f00      0x2bc d:/applications/mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m/nofp\libgcc.a(_udivmoddi4.o)
+                0x08002f00                __udivmoddi4
+ .text.memset   0x080031bc       0xa4 d:/applications/mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m/nofp\libg.a(libc_a-memset.o)
+                0x080031bc                memset
  .text.__libc_init_array
-                0x08003170       0x50 d:/applications/mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m/nofp\libg.a(libc_a-init.o)
-                0x08003170                __libc_init_array
+                0x08003260       0x50 d:/applications/mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m/nofp\libg.a(libc_a-init.o)
+                0x08003260                __libc_init_array
  .text.__retarget_lock_acquire_recursive
-                0x080031c0        0x4 d:/applications/mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m/nofp\libg.a(libc_a-lock.o)
-                0x080031c0                __retarget_lock_acquire_recursive
+                0x080032b0        0x4 d:/applications/mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m/nofp\libg.a(libc_a-lock.o)
+                0x080032b0                __retarget_lock_acquire_recursive
  .text.__retarget_lock_release_recursive
-                0x080031c4        0x4 d:/applications/mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m/nofp\libg.a(libc_a-lock.o)
-                0x080031c4                __retarget_lock_release_recursive
+                0x080032b4        0x4 d:/applications/mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m/nofp\libg.a(libc_a-lock.o)
+                0x080032b4                __retarget_lock_release_recursive
  .text.startup.register_fini
-                0x080031c8       0x14 d:/applications/mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m/nofp\libg.a(libc_a-__call_atexit.o)
- .text.atexit   0x080031dc        0xc d:/applications/mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m/nofp\libg.a(libc_a-atexit.o)
-                0x080031dc                atexit
+                0x080032b8       0x14 d:/applications/mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m/nofp\libg.a(libc_a-__call_atexit.o)
+ .text.atexit   0x080032cc        0xc d:/applications/mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m/nofp\libg.a(libc_a-atexit.o)
+                0x080032cc                atexit
  .text.__libc_fini_array
-                0x080031e8       0x28 d:/applications/mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m/nofp\libg.a(libc_a-fini.o)
-                0x080031e8                __libc_fini_array
+                0x080032d8       0x28 d:/applications/mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m/nofp\libg.a(libc_a-fini.o)
+                0x080032d8                __libc_fini_array
  .text.__register_exitproc
-                0x08003210       0x88 d:/applications/mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m/nofp\libg.a(libc_a-__atexit.o)
-                0x08003210                __register_exitproc
+                0x08003300       0x88 d:/applications/mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m/nofp\libg.a(libc_a-__atexit.o)
+                0x08003300                __register_exitproc
  *(.glue_7)
- .glue_7        0x08003298        0x0 linker stubs
+ .glue_7        0x08003388        0x0 linker stubs
  *(.glue_7t)
- .glue_7t       0x08003298        0x0 linker stubs
+ .glue_7t       0x08003388        0x0 linker stubs
  *(.eh_frame)
- .eh_frame      0x08003298        0x0 d:/applications/mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m/nofp/crtbegin.o
+ .eh_frame      0x08003388        0x0 d:/applications/mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m/nofp/crtbegin.o
  *(.init)
- .init          0x08003298        0x4 d:/applications/mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m/nofp/crti.o
-                0x08003298                _init
- .init          0x0800329c        0x8 d:/applications/mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m/nofp/crtn.o
+ .init          0x08003388        0x4 d:/applications/mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m/nofp/crti.o
+                0x08003388                _init
+ .init          0x0800338c        0x8 d:/applications/mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m/nofp/crtn.o
  *(.fini)
- .fini          0x080032a4        0x4 d:/applications/mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m/nofp/crti.o
-                0x080032a4                _fini
- .fini          0x080032a8        0x8 d:/applications/mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m/nofp/crtn.o
-                0x080032b0                . = ALIGN (0x4)
-                0x080032b0                _etext = .
+ .fini          0x08003394        0x4 d:/applications/mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m/nofp/crti.o
+                0x08003394                _fini
+ .fini          0x08003398        0x8 d:/applications/mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m/nofp/crtn.o
+                0x080033a0                . = ALIGN (0x4)
+                0x080033a0                _etext = .
 
-.vfp11_veneer   0x080032b0        0x0
- .vfp11_veneer  0x080032b0        0x0 linker stubs
+.vfp11_veneer   0x080033a0        0x0
+ .vfp11_veneer  0x080033a0        0x0 linker stubs
 
-.v4_bx          0x080032b0        0x0
- .v4_bx         0x080032b0        0x0 linker stubs
+.v4_bx          0x080033a0        0x0
+ .v4_bx         0x080033a0        0x0 linker stubs
 
-.iplt           0x080032b0        0x0
- .iplt          0x080032b0        0x0 d:/applications/mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m/nofp/crtbegin.o
+.iplt           0x080033a0        0x0
+ .iplt          0x080033a0        0x0 d:/applications/mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m/nofp/crtbegin.o
 
-.rodata         0x080032b0       0x28
-                0x080032b0                . = ALIGN (0x4)
+.rodata         0x080033a0       0x28
+                0x080033a0                . = ALIGN (0x4)
  *(.rodata)
  *(.rodata*)
  .rodata.flagBitshiftOffset.0
-                0x080032b0        0x8 CMakeFiles/clioncube.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj
+                0x080033a0        0x8 CMakeFiles/clioncube.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj
  .rodata.NSS_PIN
-                0x080032b8        0x8 CMakeFiles/clioncube.elf.dir/Src/main.c.obj
-                0x080032b8                NSS_PIN
+                0x080033a8        0x8 CMakeFiles/clioncube.elf.dir/Src/main.c.obj
+                0x080033a8                NSS_PIN
  .rodata.APBPrescTable
-                0x080032c0        0x8 CMakeFiles/clioncube.elf.dir/Src/system_stm32f4xx.c.obj
-                0x080032c0                APBPrescTable
+                0x080033b0        0x8 CMakeFiles/clioncube.elf.dir/Src/system_stm32f4xx.c.obj
+                0x080033b0                APBPrescTable
  .rodata.AHBPrescTable
-                0x080032c8       0x10 CMakeFiles/clioncube.elf.dir/Src/system_stm32f4xx.c.obj
-                0x080032c8                AHBPrescTable
-                0x080032d8                . = ALIGN (0x4)
+                0x080033b8       0x10 CMakeFiles/clioncube.elf.dir/Src/system_stm32f4xx.c.obj
+                0x080033b8                AHBPrescTable
+                0x080033c8                . = ALIGN (0x4)
 
-.ARM.extab      0x080032d8        0x0
-                0x080032d8                . = ALIGN (0x4)
+.ARM.extab      0x080033c8        0x0
+                0x080033c8                . = ALIGN (0x4)
  *(.ARM.extab* .gnu.linkonce.armextab.*)
-                0x080032d8                . = ALIGN (0x4)
+                0x080033c8                . = ALIGN (0x4)
 
-.ARM            0x080032d8        0x8
-                0x080032d8                . = ALIGN (0x4)
-                0x080032d8                __exidx_start = .
+.ARM            0x080033c8        0x8
+                0x080033c8                . = ALIGN (0x4)
+                0x080033c8                __exidx_start = .
  *(.ARM.exidx*)
  .ARM.exidx.text.__udivmoddi4
-                0x080032d8        0x8 d:/applications/mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m/nofp\libgcc.a(_udivmoddi4.o)
-                0x080032e0                __exidx_end = .
-                0x080032e0                . = ALIGN (0x4)
+                0x080033c8        0x8 d:/applications/mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m/nofp\libgcc.a(_udivmoddi4.o)
+                0x080033d0                __exidx_end = .
+                0x080033d0                . = ALIGN (0x4)
 
-.rel.dyn        0x080032e0        0x0
- .rel.iplt      0x080032e0        0x0 d:/applications/mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m/nofp/crtbegin.o
+.rel.dyn        0x080033d0        0x0
+ .rel.iplt      0x080033d0        0x0 d:/applications/mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m/nofp/crtbegin.o
 
-.preinit_array  0x080032e0        0x0
-                0x080032e0                . = ALIGN (0x4)
-                0x080032e0                PROVIDE (__preinit_array_start = .)
+.preinit_array  0x080033d0        0x0
+                0x080033d0                . = ALIGN (0x4)
+                0x080033d0                PROVIDE (__preinit_array_start = .)
  *(.preinit_array*)
-                0x080032e0                PROVIDE (__preinit_array_end = .)
-                0x080032e0                . = ALIGN (0x4)
+                0x080033d0                PROVIDE (__preinit_array_end = .)
+                0x080033d0                . = ALIGN (0x4)
 
-.init_array     0x080032e0        0x8
-                0x080032e0                . = ALIGN (0x4)
-                0x080032e0                PROVIDE (__init_array_start = .)
+.init_array     0x080033d0        0x8
+                0x080033d0                . = ALIGN (0x4)
+                0x080033d0                PROVIDE (__init_array_start = .)
  *(SORT_BY_NAME(.init_array.*))
  .init_array.00000
-                0x080032e0        0x4 d:/applications/mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m/nofp\libg.a(libc_a-__call_atexit.o)
+                0x080033d0        0x4 d:/applications/mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m/nofp\libg.a(libc_a-__call_atexit.o)
  *(.init_array*)
- .init_array    0x080032e4        0x4 d:/applications/mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m/nofp/crtbegin.o
-                0x080032e8                PROVIDE (__init_array_end = .)
-                0x080032e8                . = ALIGN (0x4)
+ .init_array    0x080033d4        0x4 d:/applications/mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m/nofp/crtbegin.o
+                0x080033d8                PROVIDE (__init_array_end = .)
+                0x080033d8                . = ALIGN (0x4)
 
-.fini_array     0x080032e8        0x4
-                0x080032e8                . = ALIGN (0x4)
-                0x080032e8                PROVIDE (__fini_array_start = .)
+.fini_array     0x080033d8        0x4
+                0x080033d8                . = ALIGN (0x4)
+                0x080033d8                PROVIDE (__fini_array_start = .)
  *(SORT_BY_NAME(.fini_array.*))
  *(.fini_array*)
- .fini_array    0x080032e8        0x4 d:/applications/mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m/nofp/crtbegin.o
-                0x080032ec                PROVIDE (__fini_array_end = .)
-                0x080032ec                . = ALIGN (0x4)
-                0x080032ec                _sidata = LOADADDR (.data)
+ .fini_array    0x080033d8        0x4 d:/applications/mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m/nofp/crtbegin.o
+                0x080033dc                PROVIDE (__fini_array_end = .)
+                0x080033dc                . = ALIGN (0x4)
+                0x080033dc                _sidata = LOADADDR (.data)
 
-.data           0x20000000       0x24 load address 0x080032ec
+.data           0x20000000       0x24 load address 0x080033dc
                 0x20000000                . = ALIGN (0x4)
                 0x20000000                _sdata = .
  *(.data)
@@ -1938,17 +1941,17 @@ LOAD d:/applications/mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/1
                 0x20000024                _edata = .
 
 .tm_clone_table
-                0x20000024        0x0 load address 0x08003310
+                0x20000024        0x0 load address 0x08003400
  .tm_clone_table
                 0x20000024        0x0 d:/applications/mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m/nofp/crtbegin.o
  .tm_clone_table
                 0x20000024        0x0 d:/applications/mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m/nofp/crtend.o
 
-.igot.plt       0x20000024        0x0 load address 0x08003310
+.igot.plt       0x20000024        0x0 load address 0x08003400
  .igot.plt      0x20000024        0x0 d:/applications/mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m/nofp/crtbegin.o
                 0x20000024                . = ALIGN (0x4)
 
-.bss            0x20000024      0x474 load address 0x08003310
+.bss            0x20000024      0x4d0 load address 0x08003400
                 0x20000024                _sbss = .
                 0x20000024                __bss_start__ = _sbss
  *(.bss)
@@ -1966,52 +1969,59 @@ LOAD d:/applications/mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/1
                 0x200000a4        0x4 CMakeFiles/clioncube.elf.dir/Src/main.c.obj
  .bss.time_cnt.1
                 0x200000a8        0x4 CMakeFiles/clioncube.elf.dir/Src/main.c.obj
- .bss.RxBuffer  0x200000ac       0x64 CMakeFiles/clioncube.elf.dir/Src/main.c.obj
-                0x200000ac                RxBuffer
+ .bss.SPIBuffer
+                0x200000ac        0x2 CMakeFiles/clioncube.elf.dir/Src/main.c.obj
+                0x200000ac                SPIBuffer
+ *fill*         0x200000ae        0x2 
+ .bss.RxBuffer  0x200000b0       0x64 CMakeFiles/clioncube.elf.dir/Src/main.c.obj
+                0x200000b0                RxBuffer
  .bss.recv_end_flag
-                0x20000110        0x1 CMakeFiles/clioncube.elf.dir/Src/main.c.obj
-                0x20000110                recv_end_flag
- .bss.rx_len    0x20000111        0x1 CMakeFiles/clioncube.elf.dir/Src/main.c.obj
-                0x20000111                rx_len
- *fill*         0x20000112        0x2 
- .bss.hspi2     0x20000114       0x58 CMakeFiles/clioncube.elf.dir/Src/spi.c.obj
-                0x20000114                hspi2
- .bss.htim3     0x2000016c       0x48 CMakeFiles/clioncube.elf.dir/Src/tim.c.obj
-                0x2000016c                htim3
- .bss.htim2     0x200001b4       0x48 CMakeFiles/clioncube.elf.dir/Src/tim.c.obj
-                0x200001b4                htim2
+                0x20000114        0x1 CMakeFiles/clioncube.elf.dir/Src/main.c.obj
+                0x20000114                recv_end_flag
+ .bss.rx_len    0x20000115        0x1 CMakeFiles/clioncube.elf.dir/Src/main.c.obj
+                0x20000115                rx_len
+ *fill*         0x20000116        0x2 
+ .bss.hspi3     0x20000118       0x58 CMakeFiles/clioncube.elf.dir/Src/spi.c.obj
+                0x20000118                hspi3
+ .bss.hspi2     0x20000170       0x58 CMakeFiles/clioncube.elf.dir/Src/spi.c.obj
+                0x20000170                hspi2
+ .bss.htim3     0x200001c8       0x48 CMakeFiles/clioncube.elf.dir/Src/tim.c.obj
+                0x200001c8                htim3
+ .bss.htim2     0x20000210       0x48 CMakeFiles/clioncube.elf.dir/Src/tim.c.obj
+                0x20000210                htim2
  .bss.hdma_usart2_tx
-                0x200001fc       0x60 CMakeFiles/clioncube.elf.dir/Src/usart.c.obj
-                0x200001fc                hdma_usart2_tx
+                0x20000258       0x60 CMakeFiles/clioncube.elf.dir/Src/usart.c.obj
+                0x20000258                hdma_usart2_tx
  .bss.hdma_usart2_rx
-                0x2000025c       0x60 CMakeFiles/clioncube.elf.dir/Src/usart.c.obj
-                0x2000025c                hdma_usart2_rx
- .bss.huart2    0x200002bc       0x44 CMakeFiles/clioncube.elf.dir/Src/usart.c.obj
-                0x200002bc                huart2
+                0x200002b8       0x60 CMakeFiles/clioncube.elf.dir/Src/usart.c.obj
+                0x200002b8                hdma_usart2_rx
+ .bss.huart2    0x20000318       0x44 CMakeFiles/clioncube.elf.dir/Src/usart.c.obj
+                0x20000318                huart2
  .bss.__lock___atexit_recursive_mutex
-                0x20000300        0x1 d:/applications/mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m/nofp\libg.a(libc_a-lock.o)
-                0x20000300                __lock___atexit_recursive_mutex
- *fill*         0x20000301        0x3 
- .bss.__atexit  0x20000304        0x4 d:/applications/mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m/nofp\libg.a(libc_a-__call_atexit.o)
-                0x20000304                __atexit
+                0x2000035c        0x1 d:/applications/mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m/nofp\libg.a(libc_a-lock.o)
+                0x2000035c                __lock___atexit_recursive_mutex
+ *fill*         0x2000035d        0x3 
+ .bss.__atexit  0x20000360        0x4 d:/applications/mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m/nofp\libg.a(libc_a-__call_atexit.o)
+                0x20000360                __atexit
  .bss.__atexit0
-                0x20000308      0x190 d:/applications/mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m/nofp\libg.a(libc_a-__atexit.o)
-                0x20000308                __atexit0
+                0x20000364      0x190 d:/applications/mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m/nofp\libg.a(libc_a-__atexit.o)
+                0x20000364                __atexit0
  *(COMMON)
-                0x20000498                . = ALIGN (0x4)
-                0x20000498                _ebss = .
-                0x20000498                __bss_end__ = _ebss
+                0x200004f4                . = ALIGN (0x4)
+                0x200004f4                _ebss = .
+                0x200004f4                __bss_end__ = _ebss
 
 ._user_heap_stack
-                0x20000498      0x600 load address 0x08003310
-                0x20000498                . = ALIGN (0x8)
+                0x200004f4      0x604 load address 0x08003400
+                0x200004f8                . = ALIGN (0x8)
+ *fill*         0x200004f4        0x4 
                 [!provide]                PROVIDE (end = .)
-                0x20000498                PROVIDE (_end = .)
-                0x20000698                . = (. + _Min_Heap_Size)
- *fill*         0x20000498      0x200 
-                0x20000a98                . = (. + _Min_Stack_Size)
- *fill*         0x20000698      0x400 
-                0x20000a98                . = ALIGN (0x8)
+                0x200004f8                PROVIDE (_end = .)
+                0x200006f8                . = (. + _Min_Heap_Size)
+ *fill*         0x200004f8      0x200 
+                0x20000af8                . = (. + _Min_Stack_Size)
+ *fill*         0x200006f8      0x400 
+                0x20000af8                . = ALIGN (0x8)
 
 /DISCARD/
  libc.a(*)
@@ -2093,7 +2103,7 @@ LOAD d:/applications/mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/1
 LOAD d:/applications/mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m/nofp\libm.a
 LOAD d:/applications/mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m/nofp\libgcc.a
 
-.debug_info     0x00000000    0x14962
+.debug_info     0x00000000    0x14ad7
  .debug_info    0x00000000      0x962 CMakeFiles/clioncube.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj
  .debug_info    0x00000962      0xeed CMakeFiles/clioncube.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
  .debug_info    0x0000184f      0xad8 CMakeFiles/clioncube.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj
@@ -2104,17 +2114,17 @@ LOAD d:/applications/mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/1
  .debug_info    0x00008e04     0x1a94 CMakeFiles/clioncube.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.obj
  .debug_info    0x0000a898     0x4093 CMakeFiles/clioncube.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
  .debug_info    0x0000e92b      0x7ab CMakeFiles/clioncube.elf.dir/Src/dma.c.obj
- .debug_info    0x0000f0d6      0x51f CMakeFiles/clioncube.elf.dir/Src/gpio.c.obj
- .debug_info    0x0000f5f5     0x1a39 CMakeFiles/clioncube.elf.dir/Src/main.c.obj
- .debug_info    0x0001102e      0xbfc CMakeFiles/clioncube.elf.dir/Src/spi.c.obj
- .debug_info    0x00011c2a      0x28d CMakeFiles/clioncube.elf.dir/Src/stm32f4xx_hal_msp.c.obj
- .debug_info    0x00011eb7      0xdaf CMakeFiles/clioncube.elf.dir/Src/stm32f4xx_it.c.obj
- .debug_info    0x00012c66      0x35c CMakeFiles/clioncube.elf.dir/Src/system_stm32f4xx.c.obj
- .debug_info    0x00012fc2      0xd1d CMakeFiles/clioncube.elf.dir/Src/tim.c.obj
- .debug_info    0x00013cdf      0xc55 CMakeFiles/clioncube.elf.dir/Src/usart.c.obj
- .debug_info    0x00014934       0x2e CMakeFiles/clioncube.elf.dir/Startup/startup_stm32f411ceux.s.obj
+ .debug_info    0x0000f0d6      0x539 CMakeFiles/clioncube.elf.dir/Src/gpio.c.obj
+ .debug_info    0x0000f60f     0x1adb CMakeFiles/clioncube.elf.dir/Src/main.c.obj
+ .debug_info    0x000110ea      0xcb5 CMakeFiles/clioncube.elf.dir/Src/spi.c.obj
+ .debug_info    0x00011d9f      0x28d CMakeFiles/clioncube.elf.dir/Src/stm32f4xx_hal_msp.c.obj
+ .debug_info    0x0001202c      0xdaf CMakeFiles/clioncube.elf.dir/Src/stm32f4xx_it.c.obj
+ .debug_info    0x00012ddb      0x35c CMakeFiles/clioncube.elf.dir/Src/system_stm32f4xx.c.obj
+ .debug_info    0x00013137      0xd1d CMakeFiles/clioncube.elf.dir/Src/tim.c.obj
+ .debug_info    0x00013e54      0xc55 CMakeFiles/clioncube.elf.dir/Src/usart.c.obj
+ .debug_info    0x00014aa9       0x2e CMakeFiles/clioncube.elf.dir/Startup/startup_stm32f411ceux.s.obj
 
-.debug_abbrev   0x00000000     0x28f9
+.debug_abbrev   0x00000000     0x291a
  .debug_abbrev  0x00000000      0x277 CMakeFiles/clioncube.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj
  .debug_abbrev  0x00000277      0x39b CMakeFiles/clioncube.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
  .debug_abbrev  0x00000612      0x27d CMakeFiles/clioncube.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj
@@ -2126,17 +2136,17 @@ LOAD d:/applications/mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/1
  .debug_abbrev  0x000014c5      0x33c CMakeFiles/clioncube.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
  .debug_abbrev  0x00001801      0x1da CMakeFiles/clioncube.elf.dir/Src/dma.c.obj
  .debug_abbrev  0x000019db      0x163 CMakeFiles/clioncube.elf.dir/Src/gpio.c.obj
- .debug_abbrev  0x00001b3e      0x2db CMakeFiles/clioncube.elf.dir/Src/main.c.obj
- .debug_abbrev  0x00001e19      0x22e CMakeFiles/clioncube.elf.dir/Src/spi.c.obj
- .debug_abbrev  0x00002047       0xd6 CMakeFiles/clioncube.elf.dir/Src/stm32f4xx_hal_msp.c.obj
- .debug_abbrev  0x0000211d      0x224 CMakeFiles/clioncube.elf.dir/Src/stm32f4xx_it.c.obj
- .debug_abbrev  0x00002341      0x120 CMakeFiles/clioncube.elf.dir/Src/system_stm32f4xx.c.obj
- .debug_abbrev  0x00002461      0x230 CMakeFiles/clioncube.elf.dir/Src/tim.c.obj
- .debug_abbrev  0x00002691      0x24b CMakeFiles/clioncube.elf.dir/Src/usart.c.obj
- .debug_abbrev  0x000028dc       0x1d CMakeFiles/clioncube.elf.dir/Startup/startup_stm32f411ceux.s.obj
+ .debug_abbrev  0x00001b3e      0x2f8 CMakeFiles/clioncube.elf.dir/Src/main.c.obj
+ .debug_abbrev  0x00001e36      0x232 CMakeFiles/clioncube.elf.dir/Src/spi.c.obj
+ .debug_abbrev  0x00002068       0xd6 CMakeFiles/clioncube.elf.dir/Src/stm32f4xx_hal_msp.c.obj
+ .debug_abbrev  0x0000213e      0x224 CMakeFiles/clioncube.elf.dir/Src/stm32f4xx_it.c.obj
+ .debug_abbrev  0x00002362      0x120 CMakeFiles/clioncube.elf.dir/Src/system_stm32f4xx.c.obj
+ .debug_abbrev  0x00002482      0x230 CMakeFiles/clioncube.elf.dir/Src/tim.c.obj
+ .debug_abbrev  0x000026b2      0x24b CMakeFiles/clioncube.elf.dir/Src/usart.c.obj
+ .debug_abbrev  0x000028fd       0x1d CMakeFiles/clioncube.elf.dir/Startup/startup_stm32f411ceux.s.obj
 
 .debug_loclists
-                0x00000000     0x9b40
+                0x00000000     0x9b64
  .debug_loclists
                 0x00000000       0xc9 CMakeFiles/clioncube.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj
  .debug_loclists
@@ -2158,17 +2168,17 @@ LOAD d:/applications/mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/1
  .debug_loclists
                 0x00009839       0xcd CMakeFiles/clioncube.elf.dir/Src/main.c.obj
  .debug_loclists
-                0x00009906       0x5d CMakeFiles/clioncube.elf.dir/Src/spi.c.obj
+                0x00009906       0x81 CMakeFiles/clioncube.elf.dir/Src/spi.c.obj
  .debug_loclists
-                0x00009963       0x45 CMakeFiles/clioncube.elf.dir/Src/stm32f4xx_it.c.obj
+                0x00009987       0x45 CMakeFiles/clioncube.elf.dir/Src/stm32f4xx_it.c.obj
  .debug_loclists
-                0x000099a8       0xdb CMakeFiles/clioncube.elf.dir/Src/system_stm32f4xx.c.obj
+                0x000099cc       0xdb CMakeFiles/clioncube.elf.dir/Src/system_stm32f4xx.c.obj
  .debug_loclists
-                0x00009a83       0x6d CMakeFiles/clioncube.elf.dir/Src/tim.c.obj
+                0x00009aa7       0x6d CMakeFiles/clioncube.elf.dir/Src/tim.c.obj
  .debug_loclists
-                0x00009af0       0x50 CMakeFiles/clioncube.elf.dir/Src/usart.c.obj
+                0x00009b14       0x50 CMakeFiles/clioncube.elf.dir/Src/usart.c.obj
 
-.debug_aranges  0x00000000      0xe78
+.debug_aranges  0x00000000      0xe80
  .debug_aranges
                 0x00000000       0xf0 CMakeFiles/clioncube.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj
  .debug_aranges
@@ -2194,22 +2204,22 @@ LOAD d:/applications/mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/1
  .debug_aranges
                 0x00000c80       0x60 CMakeFiles/clioncube.elf.dir/Src/main.c.obj
  .debug_aranges
-                0x00000ce0       0x30 CMakeFiles/clioncube.elf.dir/Src/spi.c.obj
+                0x00000ce0       0x38 CMakeFiles/clioncube.elf.dir/Src/spi.c.obj
  .debug_aranges
-                0x00000d10       0x20 CMakeFiles/clioncube.elf.dir/Src/stm32f4xx_hal_msp.c.obj
+                0x00000d18       0x20 CMakeFiles/clioncube.elf.dir/Src/stm32f4xx_hal_msp.c.obj
  .debug_aranges
-                0x00000d30       0x90 CMakeFiles/clioncube.elf.dir/Src/stm32f4xx_it.c.obj
+                0x00000d38       0x90 CMakeFiles/clioncube.elf.dir/Src/stm32f4xx_it.c.obj
  .debug_aranges
-                0x00000dc0       0x28 CMakeFiles/clioncube.elf.dir/Src/system_stm32f4xx.c.obj
+                0x00000dc8       0x28 CMakeFiles/clioncube.elf.dir/Src/system_stm32f4xx.c.obj
  .debug_aranges
-                0x00000de8       0x38 CMakeFiles/clioncube.elf.dir/Src/tim.c.obj
+                0x00000df0       0x38 CMakeFiles/clioncube.elf.dir/Src/tim.c.obj
  .debug_aranges
-                0x00000e20       0x30 CMakeFiles/clioncube.elf.dir/Src/usart.c.obj
+                0x00000e28       0x30 CMakeFiles/clioncube.elf.dir/Src/usart.c.obj
  .debug_aranges
-                0x00000e50       0x28 CMakeFiles/clioncube.elf.dir/Startup/startup_stm32f411ceux.s.obj
+                0x00000e58       0x28 CMakeFiles/clioncube.elf.dir/Startup/startup_stm32f411ceux.s.obj
 
 .debug_rnglists
-                0x00000000      0xb17
+                0x00000000      0xb1d
  .debug_rnglists
                 0x00000000       0xaf CMakeFiles/clioncube.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj
  .debug_rnglists
@@ -2235,21 +2245,21 @@ LOAD d:/applications/mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/1
  .debug_rnglists
                 0x000009b1       0x54 CMakeFiles/clioncube.elf.dir/Src/main.c.obj
  .debug_rnglists
-                0x00000a05       0x20 CMakeFiles/clioncube.elf.dir/Src/spi.c.obj
+                0x00000a05       0x26 CMakeFiles/clioncube.elf.dir/Src/spi.c.obj
  .debug_rnglists
-                0x00000a25       0x13 CMakeFiles/clioncube.elf.dir/Src/stm32f4xx_hal_msp.c.obj
+                0x00000a2b       0x13 CMakeFiles/clioncube.elf.dir/Src/stm32f4xx_hal_msp.c.obj
  .debug_rnglists
-                0x00000a38       0x67 CMakeFiles/clioncube.elf.dir/Src/stm32f4xx_it.c.obj
+                0x00000a3e       0x67 CMakeFiles/clioncube.elf.dir/Src/stm32f4xx_it.c.obj
  .debug_rnglists
-                0x00000a9f       0x1a CMakeFiles/clioncube.elf.dir/Src/system_stm32f4xx.c.obj
+                0x00000aa5       0x1a CMakeFiles/clioncube.elf.dir/Src/system_stm32f4xx.c.obj
  .debug_rnglists
-                0x00000ab9       0x25 CMakeFiles/clioncube.elf.dir/Src/tim.c.obj
+                0x00000abf       0x25 CMakeFiles/clioncube.elf.dir/Src/tim.c.obj
  .debug_rnglists
-                0x00000ade       0x20 CMakeFiles/clioncube.elf.dir/Src/usart.c.obj
+                0x00000ae4       0x20 CMakeFiles/clioncube.elf.dir/Src/usart.c.obj
  .debug_rnglists
-                0x00000afe       0x19 CMakeFiles/clioncube.elf.dir/Startup/startup_stm32f411ceux.s.obj
+                0x00000b04       0x19 CMakeFiles/clioncube.elf.dir/Startup/startup_stm32f411ceux.s.obj
 
-.debug_line     0x00000000    0x1205c
+.debug_line     0x00000000    0x121be
  .debug_line    0x00000000      0x5db CMakeFiles/clioncube.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj
  .debug_line    0x000005db      0x886 CMakeFiles/clioncube.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
  .debug_line    0x00000e61      0xeb0 CMakeFiles/clioncube.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj
@@ -2260,17 +2270,17 @@ LOAD d:/applications/mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/1
  .debug_line    0x00009e3f     0x1d19 CMakeFiles/clioncube.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.obj
  .debug_line    0x0000bb58     0x4650 CMakeFiles/clioncube.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
  .debug_line    0x000101a8      0x2b4 CMakeFiles/clioncube.elf.dir/Src/dma.c.obj
- .debug_line    0x0001045c      0x24e CMakeFiles/clioncube.elf.dir/Src/gpio.c.obj
- .debug_line    0x000106aa      0x5bf CMakeFiles/clioncube.elf.dir/Src/main.c.obj
- .debug_line    0x00010c69      0x367 CMakeFiles/clioncube.elf.dir/Src/spi.c.obj
- .debug_line    0x00010fd0      0x187 CMakeFiles/clioncube.elf.dir/Src/stm32f4xx_hal_msp.c.obj
- .debug_line    0x00011157      0x415 CMakeFiles/clioncube.elf.dir/Src/stm32f4xx_it.c.obj
- .debug_line    0x0001156c      0x250 CMakeFiles/clioncube.elf.dir/Src/system_stm32f4xx.c.obj
- .debug_line    0x000117bc      0x401 CMakeFiles/clioncube.elf.dir/Src/tim.c.obj
- .debug_line    0x00011bbd      0x425 CMakeFiles/clioncube.elf.dir/Src/usart.c.obj
- .debug_line    0x00011fe2       0x7a CMakeFiles/clioncube.elf.dir/Startup/startup_stm32f411ceux.s.obj
+ .debug_line    0x0001045c      0x26f CMakeFiles/clioncube.elf.dir/Src/gpio.c.obj
+ .debug_line    0x000106cb      0x62b CMakeFiles/clioncube.elf.dir/Src/main.c.obj
+ .debug_line    0x00010cf6      0x43c CMakeFiles/clioncube.elf.dir/Src/spi.c.obj
+ .debug_line    0x00011132      0x187 CMakeFiles/clioncube.elf.dir/Src/stm32f4xx_hal_msp.c.obj
+ .debug_line    0x000112b9      0x415 CMakeFiles/clioncube.elf.dir/Src/stm32f4xx_it.c.obj
+ .debug_line    0x000116ce      0x250 CMakeFiles/clioncube.elf.dir/Src/system_stm32f4xx.c.obj
+ .debug_line    0x0001191e      0x401 CMakeFiles/clioncube.elf.dir/Src/tim.c.obj
+ .debug_line    0x00011d1f      0x425 CMakeFiles/clioncube.elf.dir/Src/usart.c.obj
+ .debug_line    0x00012144       0x7a CMakeFiles/clioncube.elf.dir/Startup/startup_stm32f411ceux.s.obj
 
-.debug_str      0x00000000     0x4412
+.debug_str      0x00000000     0x442f
  .debug_str     0x00000000      0x9d6 CMakeFiles/clioncube.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj
                                 0xa3e (size before relaxing)
  .debug_str     0x000009d6      0x4c7 CMakeFiles/clioncube.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
@@ -2293,21 +2303,21 @@ LOAD d:/applications/mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/1
                                 0x95c (size before relaxing)
  .debug_str     0x00003fc0       0x37 CMakeFiles/clioncube.elf.dir/Src/gpio.c.obj
                                 0x3a7 (size before relaxing)
- .debug_str     0x00003ff7      0x12c CMakeFiles/clioncube.elf.dir/Src/main.c.obj
-                               0x132d (size before relaxing)
- .debug_str     0x00004123       0x33 CMakeFiles/clioncube.elf.dir/Src/spi.c.obj
-                                0xc10 (size before relaxing)
- .debug_str     0x00004156       0x37 CMakeFiles/clioncube.elf.dir/Src/stm32f4xx_hal_msp.c.obj
+ .debug_str     0x00003ff7      0x149 CMakeFiles/clioncube.elf.dir/Src/main.c.obj
+                               0x134a (size before relaxing)
+ .debug_str     0x00004140       0x33 CMakeFiles/clioncube.elf.dir/Src/spi.c.obj
+                                0xc23 (size before relaxing)
+ .debug_str     0x00004173       0x37 CMakeFiles/clioncube.elf.dir/Src/stm32f4xx_hal_msp.c.obj
                                 0x2e8 (size before relaxing)
- .debug_str     0x0000418d      0x15b CMakeFiles/clioncube.elf.dir/Src/stm32f4xx_it.c.obj
+ .debug_str     0x000041aa      0x15b CMakeFiles/clioncube.elf.dir/Src/stm32f4xx_it.c.obj
                                 0xc84 (size before relaxing)
- .debug_str     0x000042e8       0x61 CMakeFiles/clioncube.elf.dir/Src/system_stm32f4xx.c.obj
+ .debug_str     0x00004305       0x61 CMakeFiles/clioncube.elf.dir/Src/system_stm32f4xx.c.obj
                                 0x34e (size before relaxing)
- .debug_str     0x00004349       0x38 CMakeFiles/clioncube.elf.dir/Src/tim.c.obj
+ .debug_str     0x00004366       0x38 CMakeFiles/clioncube.elf.dir/Src/tim.c.obj
                                 0xd6d (size before relaxing)
- .debug_str     0x00004381       0x36 CMakeFiles/clioncube.elf.dir/Src/usart.c.obj
+ .debug_str     0x0000439e       0x36 CMakeFiles/clioncube.elf.dir/Src/usart.c.obj
                                 0xc51 (size before relaxing)
- .debug_str     0x000043b7       0x5b CMakeFiles/clioncube.elf.dir/Startup/startup_stm32f411ceux.s.obj
+ .debug_str     0x000043d4       0x5b CMakeFiles/clioncube.elf.dir/Startup/startup_stm32f411ceux.s.obj
                                  0x8c (size before relaxing)
 
 .comment        0x00000000       0x45
@@ -2331,7 +2341,7 @@ LOAD d:/applications/mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/1
  .comment       0x00000045       0x46 CMakeFiles/clioncube.elf.dir/Src/tim.c.obj
  .comment       0x00000045       0x46 CMakeFiles/clioncube.elf.dir/Src/usart.c.obj
 
-.debug_frame    0x00000000     0x287c
+.debug_frame    0x00000000     0x2898
  .debug_frame   0x00000000      0x1ec CMakeFiles/clioncube.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj
  .debug_frame   0x000001ec      0x1cc CMakeFiles/clioncube.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
  .debug_frame   0x000003b8      0x188 CMakeFiles/clioncube.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj
@@ -2343,22 +2353,22 @@ LOAD d:/applications/mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/1
  .debug_frame   0x00001c44      0x5c4 CMakeFiles/clioncube.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
  .debug_frame   0x00002208       0x30 CMakeFiles/clioncube.elf.dir/Src/dma.c.obj
  .debug_frame   0x00002238       0x38 CMakeFiles/clioncube.elf.dir/Src/gpio.c.obj
- .debug_frame   0x00002270       0xdc CMakeFiles/clioncube.elf.dir/Src/main.c.obj
- .debug_frame   0x0000234c       0x60 CMakeFiles/clioncube.elf.dir/Src/spi.c.obj
- .debug_frame   0x000023ac       0x28 CMakeFiles/clioncube.elf.dir/Src/stm32f4xx_hal_msp.c.obj
- .debug_frame   0x000023d4      0x140 CMakeFiles/clioncube.elf.dir/Src/stm32f4xx_it.c.obj
- .debug_frame   0x00002514       0x30 CMakeFiles/clioncube.elf.dir/Src/system_stm32f4xx.c.obj
- .debug_frame   0x00002544       0x88 CMakeFiles/clioncube.elf.dir/Src/tim.c.obj
- .debug_frame   0x000025cc       0x64 CMakeFiles/clioncube.elf.dir/Src/usart.c.obj
- .debug_frame   0x00002630       0x2c d:/applications/mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m/nofp\libgcc.a(_aeabi_uldivmod.o)
- .debug_frame   0x0000265c       0x34 d:/applications/mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m/nofp\libgcc.a(_udivmoddi4.o)
- .debug_frame   0x00002690       0x2c d:/applications/mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m/nofp\libg.a(libc_a-memset.o)
- .debug_frame   0x000026bc       0x2c d:/applications/mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m/nofp\libg.a(libc_a-init.o)
- .debug_frame   0x000026e8       0xb0 d:/applications/mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m/nofp\libg.a(libc_a-lock.o)
- .debug_frame   0x00002798       0x5c d:/applications/mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m/nofp\libg.a(libc_a-__call_atexit.o)
- .debug_frame   0x000027f4       0x20 d:/applications/mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m/nofp\libg.a(libc_a-atexit.o)
- .debug_frame   0x00002814       0x34 d:/applications/mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m/nofp\libg.a(libc_a-fini.o)
- .debug_frame   0x00002848       0x34 d:/applications/mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m/nofp\libg.a(libc_a-__atexit.o)
+ .debug_frame   0x00002270       0xe0 CMakeFiles/clioncube.elf.dir/Src/main.c.obj
+ .debug_frame   0x00002350       0x78 CMakeFiles/clioncube.elf.dir/Src/spi.c.obj
+ .debug_frame   0x000023c8       0x28 CMakeFiles/clioncube.elf.dir/Src/stm32f4xx_hal_msp.c.obj
+ .debug_frame   0x000023f0      0x140 CMakeFiles/clioncube.elf.dir/Src/stm32f4xx_it.c.obj
+ .debug_frame   0x00002530       0x30 CMakeFiles/clioncube.elf.dir/Src/system_stm32f4xx.c.obj
+ .debug_frame   0x00002560       0x88 CMakeFiles/clioncube.elf.dir/Src/tim.c.obj
+ .debug_frame   0x000025e8       0x64 CMakeFiles/clioncube.elf.dir/Src/usart.c.obj
+ .debug_frame   0x0000264c       0x2c d:/applications/mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m/nofp\libgcc.a(_aeabi_uldivmod.o)
+ .debug_frame   0x00002678       0x34 d:/applications/mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m/nofp\libgcc.a(_udivmoddi4.o)
+ .debug_frame   0x000026ac       0x2c d:/applications/mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m/nofp\libg.a(libc_a-memset.o)
+ .debug_frame   0x000026d8       0x2c d:/applications/mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m/nofp\libg.a(libc_a-init.o)
+ .debug_frame   0x00002704       0xb0 d:/applications/mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m/nofp\libg.a(libc_a-lock.o)
+ .debug_frame   0x000027b4       0x5c d:/applications/mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m/nofp\libg.a(libc_a-__call_atexit.o)
+ .debug_frame   0x00002810       0x20 d:/applications/mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m/nofp\libg.a(libc_a-atexit.o)
+ .debug_frame   0x00002830       0x34 d:/applications/mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m/nofp\libg.a(libc_a-fini.o)
+ .debug_frame   0x00002864       0x34 d:/applications/mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m/nofp\libg.a(libc_a-__atexit.o)
 
 .debug_line_str
                 0x00000000      0x142

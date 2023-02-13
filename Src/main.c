@@ -1,3 +1,21 @@
+/* USER CODE BEGIN Header */
+/**
+  ******************************************************************************
+  * @file           : main.c
+  * @brief          : Main program body
+  ******************************************************************************
+  * @attention
+  *
+  * Copyright (c) 2023 STMicroelectronics.
+  * All rights reserved.
+  *
+  * This software is licensed under terms that can be found in the LICENSE file
+  * in the root directory of this software component.
+  * If no LICENSE file comes with this software, it is provided AS-IS.
+  *
+  ******************************************************************************
+  */
+/* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
 #include "dma.h"
@@ -23,13 +41,13 @@
 /* USER CODE END PM */
 
 /* Private variables ---------------------------------------------------------*/
+
 /* USER CODE BEGIN PV */
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
 void SystemClock_Config(void);
 static void MX_NVIC_Init(void);
-
 /* USER CODE BEGIN PFP */
 void SWITCH_CTRL(uint8_t const* data);
 /* USER CODE END PFP */
@@ -37,13 +55,14 @@ void SWITCH_CTRL(uint8_t const* data);
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
 volatile uint8_t rx_len=0;                     //接收数据长度
-volatile uint8_t recv_end_flag=0;        //接收完成标记�?
+volatile uint8_t recv_end_flag=0;        //接收完成标记�???
 uint8_t RxBuffer[100];      //接收缓存
 char  BUFFER_SIZE=100;      //
+uint8_t SPIBuffer[2] = {0,0};
 
 #define NUM_OF_NSS_PINS 4
-GPIO_TypeDef* NSS_PORT[NUM_OF_NSS_PINS] = {GPIOB, GPIOB, GPIOA,GPIOA};
 
+GPIO_TypeDef* NSS_PORT[NUM_OF_NSS_PINS] = {GPIOB, GPIOB, GPIOA,GPIOA};
 const uint16_t NSS_PIN[NUM_OF_NSS_PINS] = {GPIO_PIN_10, GPIO_PIN_1, GPIO_PIN_7,GPIO_PIN_5};
 
 void SPI_NSS_Pin_Control(uint8_t PinNumber, uint8_t PinState){
@@ -61,6 +80,7 @@ int main(void)
   /* USER CODE END 1 */
 
   /* MCU Configuration--------------------------------------------------------*/
+
   /* Reset of all peripherals, Initializes the Flash interface and the Systick. */
   HAL_Init();
 
@@ -80,6 +100,7 @@ int main(void)
   MX_SPI2_Init();
   MX_TIM2_Init();
   MX_TIM3_Init();
+  MX_SPI3_Init();
 
   /* Initialize interrupts */
   MX_NVIC_Init();
@@ -102,6 +123,12 @@ int main(void)
           HAL_SPI_Transmit(&hspi2,RxBuffer+1,1,20);
           while( hspi2.State == HAL_SPI_STATE_BUSY_TX){};  // wait
           SPI_NSS_Pin_Control((RxBuffer[2]-1)/2,1);
+          SPIBuffer[0] = RxBuffer[4];
+          SPIBuffer[1]= RxBuffer[3];
+          HAL_GPIO_WritePin(GPIOB,GPIO_PIN_4,GPIO_PIN_RESET);
+          HAL_SPI_Transmit(&hspi3,SPIBuffer,1,20);
+          while(hspi3.State == HAL_SPI_STATE_BUSY_TX){};  // wait
+          HAL_GPIO_WritePin(GPIOB,GPIO_PIN_4,GPIO_PIN_SET);
 
           for(uint8_t i=0;i<rx_len;i++){   //clear
               RxBuffer[i]=0;
